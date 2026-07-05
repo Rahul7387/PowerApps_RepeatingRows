@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Power Apps — Repeating Rows</title>
+<style>
+  :root{ --purple:#742774; --border:#E1DFDD; --text:#201F1E; --text-secondary:#605E5C; }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,Roboto,Arial,sans-serif;background:#F3F2F1;color:var(--text);display:flex;align-items:center;justify-content:center;min-height:100vh;}
+  .card{background:#fff;border:1px solid var(--border);border-radius:14px;max-width:640px;width:90%;box-shadow:0 10px 30px rgba(10,20,40,.12);overflow:hidden;}
+  .band{height:8px;background:linear-gradient(90deg,var(--purple),#0066FF);}
+  .body{padding:34px 36px;}
+  .eyebrow{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--purple);font-weight:800;}
+  h1{font-size:22px;margin:10px 0 12px;}
+  p{font-size:13.5px;color:var(--text-secondary);line-height:1.6;}
+  .mock{margin:20px 0;border:1px solid var(--border);border-radius:8px;overflow:hidden;}
+  .row{display:flex;justify-content:space-between;padding:8px 12px;font-size:10.5px;border-bottom:1px solid #f1f0ef;background:#fff;}
+  .row:nth-child(even){background:#fafafa;}
+  .btn-row{display:flex;gap:10px;margin-top:20px;}
+  .btn{flex:1;text-align:center;padding:11px;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none;}
+  .btn.primary{background:var(--text);color:#fff;}
+  .btn.secondary{background:#F3F2F1;color:var(--text);}
+  .back{display:block;text-align:center;margin-top:18px;font-size:12px;color:var(--text-secondary);text-decoration:none;}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="band"></div>
+    <div class="body">
+      <div class="eyebrow">Power Apps Canvas · Gallery Patterns</div>
+      <h1>Repeating Row Functionality</h1>
+      <p>A comprehensive reference for building repeating row functionality in Power Apps Canvas apps — every available method, best practices, known limitations, and performance tips.</p>
+      <div class="mock">
+        <div class="row"><span>Aster Manufacturing</span><span>₹18,50,000</span></div>
+        <div class="row"><span>Northline Supplies</span><span>₹4,20,000</span></div>
+        <div class="row"><span>Meridian Group</span><span>₹86,200</span></div>
+        <div class="row"><span>+ repeating for every row in the data source...</span><span></span></div>
+      </div>
+      <div class="btn-row">
+        <a class="btn primary" href="./README.md">Read the Full Guide</a>
+        <a class="btn secondary" href="https://github.com/Rahul7387/PowerApps_RepeatingRows">View on GitHub</a>
+      </div>
+      <a class="back" href="https://rahul7387.github.io/power-platform-portfolio-hub/">← Back to Portfolio Hub</a>
+    </div>
+  </div>
+</body>
+</html>
